@@ -1,0 +1,121 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: relative;   
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    top: 0;
+}
+section header ul{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+}
+section header ul li{
+    list-style: none; 
+}
+section header ul li a{
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+}
+section header ul li button{
+    background-color: #4584ef;
+    color: white;
+    font-weight: bold;
+    padding: 7px 13px;
+    border: none;
+    border-radius: 5%;
+    outline: none;
+    cursor: pointer;
+}
+section .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .main .searchbox{
+    position: relative;
+    width: 50%;
+    margin-top: 20px;
+}
+section .main .searchbox .search{
+    width: 80%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 100px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+}
+section .main .searchbox .icons{
+    position: absolute;
+    top: 0;
+    padding: 13px;
+    display: flex;
+    
+    
+}
+section .main .button{
+
+    margin-top: 20px;
+
+}
+section .main .button button{
+    margin: 5px;
+    padding: 13px 15px;
+    border: none;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    border-radius: 1px solid transparent;
+}
+section .footer{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+}
+section .footer ul{
+    display: flex;
+
+}
+section .footer ul li{
+    list-style: none;
+    font-size: 15px;
+    padding-right: 20px;
+}
+section .footer ul li a{
+    color:#5f6368;
+    text-decoration: none;
+}
+/* Mobile views */
+@media (max-width:760px){
+    section .main .searchbox{
+        width: 93%;
+    }
+    section .main .searchbox .search{
+        width: 70%;
+    }
+    section .footer{
+        display: block;
+    }
+}
